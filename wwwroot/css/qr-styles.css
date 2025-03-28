@@ -1,0 +1,18 @@
+﻿.QRcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    /* Add additional specific styles as needed */
+}
+
+.QRcontainer video {
+    border: none;
+    width: 480px; /* Adjusted width */
+    height: 360px; /* Adjusted height */
+}
+
+.QRcontainer canvas {
+    display: none;
+}

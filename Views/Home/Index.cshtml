@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "QR Code Scanner";
+}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner</title>
+    <link rel="stylesheet" href="~/css/qr-styles.css">
+</head>
+<body>
+    <div class="QRcontainer">
+        <video id="video" width="480" height="360"></video> <!-- Adjusted width and height -->
+        <canvas id="canvas" width="480" height="360"></canvas> <!-- Adjusted width and height -->
+        <p id="outputMessage">No QR code detected.</p>
+        <p id="outputData"></p>
+    </div>
+
+    <script src="/lib/jsQR.js"></script>
+    <script src="~/js/qr-script.js"></script>
+</body>
+</html>
